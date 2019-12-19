@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     }
 
     input {
-      width: 850px;
+      width: 100%;
       height: 45px;
       background: #ffffff;
       border: 1px solid #dddddd;
@@ -31,7 +31,7 @@ export const Wrapper = styled.div`
     }
 
     textarea {
-      width: 850px;
+      width: 100%;
       height: 45px;
       background: #ffffff;
       border: 1px solid #dddddd;
@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
 
     select {
       margin-top: 10px;
-      width: 400px;
+      width: 30%;
       background-color: #fff;
       border: 1px solid #dddddd;
     }

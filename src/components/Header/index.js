@@ -4,6 +4,11 @@ import { FaEllipsisH, FaTimes } from 'react-icons/fa';
 
 import { Wrapper } from './styles';
 
+const itensMenu = [
+  { id: 1, title: 'Caixa de entrada', link: '/' },
+  { id: 2, title: 'Nova Menssagem', link: '/newmenssage' },
+];
+
 const Header = () => {
   return (
     <Wrapper>
@@ -14,8 +19,12 @@ const Header = () => {
       </label>
 
       <ul className="menu">
-        <Link to="/">Caixa de entrada</Link>
-        <Link to="/newmenssage">Nova menssagem</Link>
+        {itensMenu.map(elem => (
+          <Link key={elem.id} to={elem.link}>
+            {elem.title}
+          </Link>
+        ))}
+
         <label htmlFor="chk" className="hide-menu-btn">
           <FaTimes />
         </label>
