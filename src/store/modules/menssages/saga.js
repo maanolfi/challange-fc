@@ -69,7 +69,7 @@ function* deleteMenssageDB({ id }) {
 
     yield put(requestMessage());
 
-    toast.warm('Sua menssagem foi apagada!', {
+    toast.warn('Sua menssagem foi apagada!', {
       position: toast.POSITION.TOP_CENTER,
     });
   } catch {
